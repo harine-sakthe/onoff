@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On/Off Button Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuggles&family=Mooli&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Hey Buddy!</h1>
+    <button id="toggleButton">Off</button>
+    <img id="statusImage" src="sad.png" alt="Sad Image" />
+    <audio id="audio" src="voice.mp3" hidden loop></audio>
+
+    <script>
+      var button = document.getElementById("toggleButton");
+      var image = document.getElementById("statusImage");
+      var audio = document.getElementById("audio");
+
+
+      var check = false;
+
+      function toggle() {
+        if (check) {
+          check = false;
+          button.textContent = "Off";
+          image.src="sad.png";
+          audio.pause();
+        } else {
+          check = true;
+          button.textContent = "On";
+          image.src="happy.png";
+          audio.play();
+        }
+      }
+
+      addEventListener("click", toggle);
+    </script>
+  </body>
+</html>

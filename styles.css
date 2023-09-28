@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+}
+
+#toggleButton{
+    height: 100px;
+    width:100px;
+    margin-top:300px;
+    margin-left: 700px;
+    border-radius: 100px;
+    font-family: 'Fuggles', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+#statusImage{
+    height: 350px;
+
+}
+h1{
+    font-size: 50px;
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    margin: 50px;
+}
+
